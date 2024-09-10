@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Product by Names or Series</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    
+        <h1>Search Product by Names or Series</h1>
+        <div class="sort-container">
+            <div class="sort-item">
+                <label for="sort-by">Sort by price:</label>
+                <select id="sort-by" class="sort-select">
+                    <option value="default">Choose a way to sort</option>
+                    <option value="low-price">Lowest Price</option>
+                    <option value="high-price">Highest Price</option>
+                </select>
+            </div>
+            <div class="sort-item">
+                <label for="color-filter">Filter by color:</label>
+                <select id="color-filter" class="sort-select">
+                    <option value="all">All Colors</option>
+                    <option value="black">Black</option>
+                    <option value="cream">Cream</option>
+                    <option value="lavender">Lavender</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                
+                </select>
+            </div>
+            <div class="sort-item">
+                <label for="sim">Sim:</label>
+                <select id="sim" class="sort-select">
+                    <option value="default">Choose Sim</option>
+                    <option value="single">Single</option>
+                    <option value="dual">Dual</option>
+                </select>
+            </div>
+            <div class="sort-item">
+            <label for="camera">Main Camera:</label>
+            <select id="camera" class="sort-select">
+                <option value="default">Choose Camera</option>
+                <option value="more-than-48mp">More than 48MP</option>
+                <option value="48mp">48MP</option>
+                <option value="less-than-48mp">Less than 48MP</option>
+            </select>
+        </div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="product-item" data-name="Galaxy S23 Ultra" data-price="29000" data-colors="green,phantom-black,lavender,cream" data-camera="more-than-48mp">
+                <h2>Galaxy S23 Ultra</h2>
+            <img src="Assets for mobile devices/GalaxyS23Ultra_Green.png" alt="Galaxy S23 Ultra">
+            <div class="color-container">
+                <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Ultra_Green.png" data-color="Green">
+                    <span class="color-circle green"></span>
+                </button>
+                <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Ultra_PhantomBlack.png" data-color="Phantom Black">
+                    <span class="color-circle phantom-black"></span>
+                </button>
+                <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Ultra_Lavender.png" data-color="Lavender">
+                    <span class="color-circle lavender"></span>
+                </button>
+                <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Ultra_Cream.png" data-color="Cream">
+                    <span class="color-circle cream"></span>
+                </button>
+            </div>
+                <div class="product-details">
+                    <p>Series: <strong>GalaxyS</strong></p>
+                    <p>Main camera: <strong>200MP</strong></p>
+                    <p>SIM: <strong>Dual SIM</strong></p>
+                    <p>Price: <strong>29000R</strong></p>
+                    <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="product-item" data-name="Galaxy S23" data-price="19500" data-colors="lavender,cream,phantom-black,green" data-camera="more-than-48mp">
+                <h2>Galaxy S23</h2>
+                <img src="Assets for mobile devices/GalaxyS23_Lavender.png" alt="Galaxy S23">
+                <div class="color-container">
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23_Lavender.png" data-color="Lavender">
+                        <span class="color-circle lavender"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23_Cream.png" data-color="Cream">
+                        <span class="color-circle cream"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23_PhantomBlack.png" data-color="Phantom Black">
+                        <span class="color-circle phantom-black"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23_Green.png" data-color="Green">
+                        <span class="color-circle green"></span>
+                    </button>
+                </div>
+                <div class="product-details">
+                    <p>Series: <strong>GalaxyS</strong></p>
+                    <p>Main camera: <strong>50MP</strong></p>
+                    <p>SIM: <strong>Dual SIM</strong></p>
+                    <p>Price: <strong>19500R</strong></p>
+                    <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="product-item" data-name="Galaxy S23 Plus" data-price="23750" data-colors="cream,lavender,phantom-black,green" data-camera="more-than-48mp">
+                <h2>Galaxy S23 Plus</h2>
+                <img src="Assets for mobile devices/GalaxyS23Plus_Cream.png" alt="Galaxy S23 Plus">
+                <div class="color-container">
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Plus_Lavender.png" data-color="Lavender">
+                        <span class="color-circle lavender"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Plus_Cream.png" data-color="Cream">
+                        <span class="color-circle cream"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Plus_PhantomBlack.png" data-color="Phantom Black">
+                        <span class="color-circle phantom-black"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyS23Plus_Green.png" data-color="Green">
+                        <span class="color-circle green"></span>
+                    </button>
+                </div>
+                <div class="product-details">
+                    <p>Series: <strong>GalaxyS</strong></p>
+                    <p>Main camera: <strong>50MP</strong></p>
+                    <p>SIM: <strong>Dual SIM</strong></p>
+                    <p>Price: <strong>23750R</strong></p>
+                    <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="product-item" data-name="Galaxy A04" data-price="2750">
+                <h2>Galaxy A04</h2>
+                <img src="Assets for mobile devices/GalaxyA04_Black.png" alt="Galaxy A04" data-colors="black,deep-green" data-camera="more-than-48mp">
+                <div class="color-container">
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyA04_Black.png" data-color="Black">
+                        <span class="color-circle black"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyA04_DeepGreen.png" data-color="Deep Green">
+                        <span class="color-circle deep-green"></span>
+                    </button>
+                </div>
+                <div class="product-details">
+                    <p>Series: <strong>GalaxyA</strong></p>
+                    <p>Main camera: <strong>50MP</strong></p>
+                    <p>SIM: <strong>Dual SIM</strong></p>
+                    <p>Price: <strong>2750R</strong></p>
+                    <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="product-item" data-name="Galaxy A04e" data-price="2160" data-colors="light-blue,black" data-camera="less-than-48mp">
+                <h2>Galaxy A04e</h2>
+                <img src="Assets for mobile devices/GalaxyA04e_LightBlue.png" alt="Galaxy A04e">
+                <div class="color-container">
+                     <button class="color-button" data-image="Assets for mobile devices/GalaxyA04e_LightBlue.png" data-color="Light Blue">
+                        <span class="color-circle light-blue"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyA04e_Black.png" data-color="Black">
+                        <span class="color-circle black"></span>
+                    </button>
+                </div>
+                <div class="product-details">
+                    <p>Series: <strong>GalaxyA</strong></p>
+                    <p>Main camera: <strong>13MP</strong></p>
+                    <p>SIM: <strong>Single SIM</strong></p>
+                    <p>Price: <strong>2160R</strong></p>
+                    <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="product-item" data-name="Galaxy A14" data-price="3750" data-colors="black,light-green" data-camera="less-than-48mp">
+                <h2>Galaxy A14</h2>
+                <img src="Assets for mobile devices/GalaxyA14_LightGreen.png" alt="Galaxy A14">
+                <div class="color-container">
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyA14_Black.png" data-color="Black">
+                        <span class="color-circle black"></span>
+                    </button>
+                    <button class="color-button" data-image="Assets for mobile devices/GalaxyA14_LightGreen.png" data-color="Light Green">
+                        <span class="color-circle light-green"></span>
+                    </button>
+                </div>
+                <div class="product-details">
+                    <p>Series: <strong>GalaxyA</strong></p>
+                    <p>Main camera: <strong>13MP</strong></p>
+                    <p>SIM: <strong>Single SIM</strong></p>
+                    <p>Price: <strong>3750R</strong></p>
+                    <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                </div>
+            </div>
+                <div class="product-item" data-name="Galaxy Z Fold 4" data-price="27500" data-colors="black,beige,gray-green" data-camera="48mp">
+                    <h2>Galaxy Z Fold 4</h2>
+                    <img src="Assets for mobile devices/Z-Fold4-Black.png" alt="Galaxy Z Fold 4">
+                    <div class="color-container">
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Fold4-Beige.png" data-color="Beige">
+                            <span class="color-circle beige"></span>
+                        </button>
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Fold4-Black.png" data-color="Black">
+                            <span class="color-circle phantom-black"></span>
+                        </button>
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Fold4-GrayGreen.png" data-color="Gray Green">
+                            <span class="color-circle gray-green"></span></button>
+                    </div>
+                    <div class="product-details">
+                        <p>Series: <strong>GalaxyZ</strong></p>
+                        <p>Main camera: <strong>48MP</strong></p>
+                        <p>SIM: <strong>Dual SIM</strong></p>
+                        <p>Price: <strong>27500R</strong></p>
+                        <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="product-item" data-name="Galaxy Z Flip4" data-price="23450" data-colors="bora-purpl,blue,graphite,pink-gold" data-camera="less-than-48mp">
+                    <h2>Galaxy Z Flip4</h2>
+                    <img src="Assets for mobile devices/Z-Flip4-BoraPurple.png" alt="Galaxy Z Flip4">
+                    <div class="color-container">
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Flip4-Blue.png" data-color="Blue">
+                            <span class="color-circle blue"></span>
+                        </button>
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Flip4-BoraPurple.png" data-color="Bora Purple">
+                            <span class="color-circle bora-purple"></span>
+                        </button>
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Flip4-Graphite.png" data-color="Graphite">
+                            <span class="color-circle graphite"></span>
+                        </button>
+                        <button class="color-button" data-image="Assets for mobile devices/Z-Flip4-PinkGold.png" data-color="Pink Gold">
+                            <span class="color-circle pink-gold"></span>
+                        </button>
+                    </div>
+                    <div class="product-details">
+                        <p>Series: <strong>GalaxyA</strong></p>
+                        <p>Main camera: <strong>13MP</strong></p>
+                        <p>SIM: <strong>Single SIM</strong></p>
+                        <p>Price: <strong>3750R</strong></p>
+                        <button class="learn-more-btn" onclick="window.location.href='https://www.samsung.com/za/smartphones/galaxy-a'">LEARN MORE</button>
+                    </div>
+                </div>
+                <button id="load-more" class="load-more-btn">Load more products⬇</button>
+            </div>
+    <a href="#"  class="move-to-top">↑</a>
+    <script src="script.js"></script>
+</body>
+</html>
